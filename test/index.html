@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>calculator </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+
+        <form id="calcForm">
+            <div>
+            <label for = "number1"> Number 1:</label>
+            <input type="text" id="num1" name  = "number1" required>
+            </div>
+            <br>
+            <div>
+            <label for = "number2">Number 2:</label>
+            <input type="text" id="num2" name  = "number2" required>
+            </div>
+            <br>
+            <div>
+            <button type="button" onclick="calculate('add')">Add</button>
+            <button type="button" onclick="calculate('subtract')">Subtract</button>
+            <button type="button" onclick="calculate('multiply')">Multiply</button>
+            </div>
+        </form>
+
+        <br>
+        <div id="result"></div>
+    <script src="index.js"></script>
+    </body>
+</html>
